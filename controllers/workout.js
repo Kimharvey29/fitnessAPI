@@ -3,6 +3,7 @@ const Workout = require("../models/Workout.js")
 const { errorHandler } = require('../auth.js')
 
 
+
 module.exports.addWorkout = (req, res) => {
     let newWorkout = new Workout({
         userId : req.user.id,
